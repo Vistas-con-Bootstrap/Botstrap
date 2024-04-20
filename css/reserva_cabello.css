@@ -1,0 +1,87 @@
+/* Importacion de la fuente Bona nova  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Inportacion de la fuente goudy bookletter  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Goudy+Bookletter+1911&family=Itim&display=swap');
+
+#supra{
+    font-size: 30px;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#seccion{
+    height: 102px;
+    background: #D9D9D9;
+    border-bottom: 1px #7B7979 solid;
+}
+
+
+#cuerpo{
+    flex-direction: column;
+}
+
+h2{
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+/* Barra de busqueda  */
+
+#barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscar{
+    width: 800px;
+    border-radius: 20px;
+    height: 40px;
+}
+
+#img-lupa{
+    width: 25px;
+    height: 25px;
+    background: url(../img/lupa.png);
+    background-size: 100% 100%;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 5.5px;
+}
+
+/* Cortes  */
+
+#cabello, #cabello-barba, #Completo{
+    width: 280px;
+    height: 95px;
+    margin-left: 30px;
+    border: 3px green solid;
+}
+
+
+
+ /* Boton siguiente  */
+#caja-btn{
+    position: absolute;
+    top: 680px;
+    right: 25px;
+}
+
+#btn-siguiente{
+    width: 160px;
+    height: 70px;
+    padding: 0px 0px 0px 20px;
+}
+
+#img-proximo{
+    width: 30px;
+    height: 30px;
+    background: url(../img/proximo.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+}

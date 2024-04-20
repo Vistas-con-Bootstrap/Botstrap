@@ -1,0 +1,62 @@
+/* Importacion de la fuente Bona nova  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Inportacion de la fuente goudy bookletter  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Goudy+Bookletter+1911&family=Itim&display=swap');
+
+#supra{
+    font-size: 30px;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#seccion{
+    height: 102px;
+    background: #D9D9D9;
+    border-bottom: 1px #7B7979 solid;
+}
+
+#barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cuerpo{
+    flex-direction: column;
+}
+
+/* Barra de busqueda  */
+
+#barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscar{
+    width: 800px;
+    border-radius: 20px;
+    height: 40px;
+}
+
+#img-lupa{
+    width: 25px;
+    height: 25px;
+    background: url(../img/lupa.png);
+    background-size: 100% 100%;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 5.5px;
+}
+
+#tarjeta{
+    width: 300px;
+}
+/* clase para centar  */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

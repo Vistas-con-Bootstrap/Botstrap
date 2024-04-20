@@ -1,0 +1,68 @@
+/* Importacion de la fuente Bona nova  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Inportacion de la fuente goudy bookletter  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Goudy+Bookletter+1911&family=Itim&display=swap');
+
+#supra{
+    font-size: 30px;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#seccion{
+    height: 102px;
+    background: #D9D9D9;
+    border-bottom: 1px #7B7979 solid;
+}
+
+#barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cuerpo{
+    flex-direction: column;
+}
+
+/* las dos opcines de azulito claro  */ 
+#paso1, #paso2{
+    border: 1px black solid;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#paso1:hover, #paso2:hover{
+    box-shadow: 2px 2px 10px rgba(23, 153, 252, 0.404);
+    cursor: pointer;
+}
+
+#a{
+    text-decoration: none;
+}
+
+
+ /* Boton siguiente  */
+ #caja-btn{
+    position: absolute;
+    top: 680px;
+    right: 25px;
+}
+
+#btn-siguiente{
+    width: 160px;
+    height: 70px;
+    padding: 0px 0px 0px 20px;
+}
+
+#img-proximo{
+    width: 30px;
+    height: 30px;
+    background: url(../img/proximo.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+}

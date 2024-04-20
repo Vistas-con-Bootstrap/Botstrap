@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis citas</title>
+
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/citas_cliente.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg text-light" style="background-color: #03167C">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" id="supra" href="#">Supra Barber</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="contenido-derecha d-flex align-items-center justify-content-end">
+                <span class="nav-item mx-3">
+                    <a class="nav-link text-light" href="#">Barbería</a>
+                </span>
+    
+                <span class="nav-item mx-4 d-flex">
+                    <a class="nav-link text-light" href="#">Mis citas</a>
+                </span>
+    
+                <span>
+                    <a class="navbar-brand" href="#">
+                    <img src="img/usuario.png" width="40" height="40">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Barra lateral de navegación  --> 
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+            <nav class="col-md-3 navflex-column ">
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Mis citas</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Barberos</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Anuncios</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Productos</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Promociones</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Reseñas</a>
+                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Cortes</a>
+            </nav>
+
+            <!-- Cuerpo de la interfaz  -->
+            <div class="col-md-9" id="cuerpo">
+
+                <div class="row my-3">
+
+                    <div class="col-md-3">
+                        <img src="img/circulo verde.png" id="c1"> Vigente
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="img/circulo rojo.png" id="c2"> Cancelada
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/circulo gris.png" id="c3"> No vigente
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <button type="button" class="btn center my-3 text-light" id="cita" style="background: rgb(2, 169, 2);">
+                        <h1 class="fs-4">Fecha:<br>    Sábado, 20/04/2024</h1>
+                        <p class="mx-4">Turno:<br> 11:00 am - 12:00 pm</p>
+                        <p>Barbero<br>  <img src="img/usuario.png"></p>
+                    </button>
+
+                    <button type="button" class="btn center my-3 text-light" id="cita" style="background: rgb(2, 169, 2);">
+                        <h1 class="fs-4">Fecha:<br>    Sábado, 20/04/2024</h1>
+                        <p class="mx-4">Turno:<br> 11:00 am - 12:00 pm</p>
+                        <p>Barbero<br>  <img src="img/usuario.png"></p>
+                    </button>
+                    
+                    <button type="button" class="btn btn-danger center my-3" id="cita">
+                        <h1 class="fs-4">Fecha:<br>    Sábado, 20/04/2024</h1>
+                        <p class="mx-4">Turno:<br> 11:00 am - 12:00 pm</p>
+                        <p>Barbero<br>  <img src="img/usuario.png"></p>
+                    </button>
+                    
+                    <button type="button" class="btn btn-secondary center my-3" id="cita">
+                        <h1 class="fs-4">Fecha:<br>    Sábado, 20/04/2024</h1>
+                        <p class="mx-4">Turno:<br> 11:00 am - 12:00 pm</p>
+                        <p>Barbero<br>  <img src="img/usuario.png"></p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
