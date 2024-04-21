@@ -66,34 +66,30 @@ hr.h-color{
     }
 }
 
-
-
-
-
-
-
-
-
-
 .center{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
+#contenido{
+    height: 91.5%;
+    background: url(../img/servicios-de-barberia.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    flex-direction: column;
+}
 
 /* para los parrafos del cuerpo  */
 p{
     font-family: "Bona Nova", serif;
     font-weight: 400;
     font-style: normal;
+    color: #fff;
 }
 
 /* para el text "empieza hoy con nosotros"  */
-#cuerpo :nth-child(2){
-    color: #868686;
+#contenido :nth-child(2){
     margin-bottom: 85px;
 }
 
