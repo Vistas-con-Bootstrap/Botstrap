@@ -13,8 +13,9 @@
 </head>
 
 <body>
-
     <div class="main-container d-flex">
+
+        <!-- barra lateral  -->
         <div class="sidebar" id="side_nav">
             <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
                 <h1 class="fs-4"><span class="text-white">Supra barber</span></h1>
@@ -80,6 +81,7 @@
 
         </div>
         <div class="content">
+            <!-- barra de navegacion superior  -->
             <nav class="navbar navbar-expand-md navbar-light" style="background-color: #03167C;">
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between d-md-none d-block">
@@ -111,8 +113,9 @@
                     </div>
                 </div>
             </nav>
-
-
+            <!-- fin barra superior  -->
+            
+            <!-- contenido de la pagina  -->
             <div class="contenido-content center" id="contenido">
                 <p class="fs-3">Hola Angie, bienvenido a Supra Barber</p>
                 <p class="fs-3">¡Empieza hoy con nosotros!</p>
@@ -125,23 +128,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(".sidebar ul li").on('click', function () {
-            $(".sidebar ul li.active").removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('.open-btn').on('click', function () {
-            $('.sidebar').addClass('active');
-
-        });
-
-
-        $('.close-btn').on('click', function () {
-            $('.sidebar').removeClass('active');
-
-        })
-    </script>
+    <script src="js/script_barra lateral.js"></script>
 
 
 </body>
