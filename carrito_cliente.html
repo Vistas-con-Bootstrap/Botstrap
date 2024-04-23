@@ -13,135 +13,184 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg text-light" style="background-color: #03167C">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light" id="supra" href="#">Supra Barber</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="contenido-derecha d-flex align-items-center justify-content-end">
-
-                <a href="#" class="btn btn-primary text-dark" style="background: #8af0d3;">Reservar Cita</a>
-
-                <span class="nav-item mx-3">
-                    <a class="nav-link text-light" href="#">Barbería</a>
-                </span>
     
-                <span class="nav-item mx-4 d-flex">
-                    <a class="nav-link text-light" href="#">Mis citas</a>
-                </span>
-    
-                <span>
-                    <a class="navbar-brand" href="#">
-                    <img src="img/usuario.png" width="40" height="40">
-                    </a>
-                </span>
+    <div class="main-container d-flex">
+
+        <!-- barra lateral  -->
+        <div class="sidebar" id="side_nav">
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+                <h1 class="fs-4"><span class="text-white">Supra barber</span></h1>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-light">
+                    <i class="fal fa-stream text-light"></i>
+                </button>
             </div>
 
-            </div>
+            <ul class="list-unstyled px-2">
+
+                <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-calendar-check"></i> Mis citas</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="far fa-user-circle"></i> Barberos</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-wine-bottle"></i> Productos</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-cut"></i> Cortes</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-percentage"></i> Promociones</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-comment-alt"></i> Reseñas</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-shopping-bag"></i> Mis compras</a>
+                </li>
+
+                <hr class="h-color mx-2">
+                
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-store-alt"></i> Barberia</a>
+                </li>
+
+                <hr class="h-color mx-2">
+
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar sesion</a>
+                </li>
+            </ul>
+
         </div>
-    </nav>
+        <div class="content">
+            <!-- barra de navegacion superior  -->
+            
+            <nav class="navbar navbar-expand-md" style="background-color: #03167C;">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <a class="navbar-brand fs-4" href="#"><span class="bg-dark rounded px-2 py-0 text-white">Supra Barber</span></a>
+                        <button class="btn px-1 py-0 open-btn me-2 text-white"><i class="fal fa-stream"></i></button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
 
-    <!-- Barra lateral de navegación  --> 
-    <div class="container-fluid p-0 m-0">
-        <div class="row">
-            <nav class="col-md-3 navflex-column ">
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Mis citas</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Barberos</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Anuncios</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Productos</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Promociones</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Reseñas</a>
-                <a class="nav-link text-dark p-4" style="font-size: 25px;" id="seccion" href="#">Cortes</a>
-            </nav>
+                            <a href="#" class="btn btn-primary text-dark fs-5 py-1 px-4 me-4 center" style="background: #8af0d3;" id="btn-reservar">Reservar</a>
+                            <li class="nav-item center">
+                                <!-- link barberia  -->
+                                <a class="nav-link text-light" href="#">Barbería</a>
+                                <!-- link mis citas  -->
+                                <a class="nav-link text-light" href="#">Mis citas</a>
+                                <!-- link perfil  -->
+                                <a class="navbar-brand d-none d-sm-block" href="#" id="perfil">
+                                <img src="img/usuario.png" width="40" height="40">
+                                </a>
+                            </li>
 
-            <!-- Cuerpo de la interfaz  -->
-            <div class="col-md-9 mx-0" id="cuerpo">
-                <div class="row">
-                    <label >
-                        <input class="mt-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
-                        Seleccionar todo
-                    </label>
+                        </ul>
+
+                    </div>
                 </div>
+            </nav>
+            
+            <!-- fin barra superior  -->
 
-                <div class="row">
+            <!-- contenido de la pagina  -->
+            <div class="row ps-2" style="position: relative;">
+
+                <!-- barra de busqueda  -->
+                <nav class="navbar text-center my-5 p-0 center" id="barra">
+
+                    <form id="form" class="d-flex center" role="search" style="width: 80%;">
+
+                        <input id="buscar" class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        <div class="img" id="img-lupa"></div>
+
+                    </form>
+                </nav>
+                
+
+                <div class="row" id="products" style="margin-bottom: 80px; flex-wrap: wrap;">
                     <!-- productos  -->
                     
-                    <div class="col-md-4">
-
-                        <div class="caja-tarjeta center">
-                            <!-- Seleccionar  -->
-                            <label >
-                                <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
-                            </label>
-
-                            <div class="card text-center my-4" id="tarjeta">
-                                <!-- imagen  -->
-                                <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
-                                <!-- cuerpo  -->
-                                <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                </div>
+                    <div class="col-md-4 col-sm-6 center">
+                        <!-- seleccionar radio  -->
+                        <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
+                        
+                        <div class="card text-center my-4" id="tarjeta">
+                            <!-- imagen  -->
+                            <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
+                            <!-- cuerpo  -->
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- boton -->
+                                <a href="#" class="btn btn-primary" id="btn-ac">Agregar al carrito</a>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="col-md-4">
-
-                        <div class="caja-tarjeta center">
-                            <!-- Seleccionar  -->
-                            <label >
-                                <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
-                            </label>
-
-                            <div class="card text-center my-4" id="tarjeta">
-                                <!-- imagen  -->
-                                <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
-                                <!-- cuerpo  -->
-                                <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                </div>
+                    <div class="col-md-4 col-sm-6 center">
+                        <!-- seleccionar radio  -->
+                        <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
+                        
+                        <div class="card text-center my-4" id="tarjeta">
+                            <!-- imagen  -->
+                            <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
+                            <!-- cuerpo  -->
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <!-- boton -->
+                                <a href="#" class="btn btn-primary" id="btn-ac">Agregar al carrito</a>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="col-md-4">
-                    
-
-                        <div class="caja-tarjeta center">
-                            <!-- Seleccionar  -->
-                            <label >
-                                <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
-                            </label>
-
-                            <div class="card text-center my-4" id="tarjeta">
-                                <!-- imagen  -->
-                                <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
-                                <!-- cuerpo  -->
-                                <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                </div>
+                    <div class="col-md-4 col-sm-6 center">
+                        <!-- seleccionar radio  -->
+                        <input class="me-3" type="radio" name="opciones" value="selecTodo" style="width: 20px; height: 20px;">
+                        
+                        <div class="card text-center my-4" id="tarjeta">
+                            <!-- imagen  -->
+                            <img src="img/cerezos.png" class="card-img-top" height="200px" alt="...">
+                            <!-- cuerpo  -->
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <!-- boton -->
+                              <a href="#" class="btn btn-primary" id="btn-ac">Agregar al carrito</a>
                             </div>
                         </div>
-                        
                     </div>
-
-                    
                 </div>
-
-                
-                <div class="row border" id="barra-pagar">
-                    <div class="col-md-12 d-flex justify-content-end align-items-center">
-                        <div class="me-3">COP 23.000,00</div>
-                        <button type="button" class="btn btn-danger" id="btn-pagar">Pagar</button>
-                    </div>
-
+                <div class="col-md-12 d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-success" id="btn-pagar">Pagar COP 23.000,00</button>
                 </div>
+            </div>
+        </div>
+    </div>
+  
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script_barra lateral.js"></script>
             </div>
         </div>
     </div>
