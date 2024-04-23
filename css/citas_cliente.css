@@ -1,30 +1,65 @@
- /* Importacion de la fuente Bona nova  */
+/* Importacion de la fuente Bona nova  */
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Inportacion de la fuente goudy bookletter  */
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Goudy+Bookletter+1911&family=Itim&display=swap');
 
-#supra{
-    font-size: 30px;
+/* Importacion de la fuente itim  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Itim&display=swap');
+
+
+
+#lt, #btn-reservar{
     font-family: "Bona Nova", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-#seccion{
-    height: 102px;
-    background: #D9D9D9;
-    border-bottom: 1px #7B7979 solid;
+#barberia, #citas{
+    font-size: 25px;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+   
+#side_nav{
+    background: #6A6E80;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+hr.h-color{
+    background: #eee;
 }
 
-#barra{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sidebar li.active{
+    background: #9BC3FF;
+    border-radius: 8px;
 }
 
-#cuerpo{
-    flex-direction: column;
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #fff;
+}
+.sidebar li a{
+    color: #000;
+}
+
+@media(max-width: 767px){
+#side_nav{
+    margin-left: -250px;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 1;
+
+}
+#side_nav.active{
+    margin-left: 0;
+}
+
 }
 
 #cita{
