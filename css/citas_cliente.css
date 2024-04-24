@@ -1,3 +1,4 @@
+
 /* Importacion de la fuente Bona nova  */
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -49,22 +50,34 @@ hr.h-color{
 }
 
 @media(max-width: 767px){
-#side_nav{
-    margin-left: -250px;
-    position: absolute;
-    min-height: 100vh;
-    z-index: 1;
 
-}
-#side_nav.active{
-    margin-left: 0;
-}
+    #side_nav{
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+
+    #c1, #c2, #c3{
+        width: 120px; 
+        height: 40px;
+        font-size: 10.8px;
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    
 
 }
 
 #cita{
-    width: 600px;
-    /* height: ; */
+    width: 100%;
 }
 
 img{
@@ -72,7 +85,7 @@ img{
     height: 60px;
 }
 
-#c1, #c2, #c3{
+img{
     width: 40px; 
     height: 40px;
 }
