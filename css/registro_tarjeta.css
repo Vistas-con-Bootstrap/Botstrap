@@ -70,17 +70,3 @@ hr.h-color{
     justify-content: center;
     flex-direction: row;
 }
-
-h1{
-    font-family: "Goudy Bookletter 1911", serif;
-    font-weight: 400;
-    font-style: normal
-}
-
-#opcion1{
-    background: rgba(114, 202, 246, 0.224); 
-    height: 60px;
-}
-#opcion1:hover{
-    background: rgba(114, 156, 246, 0.484); 
-}
