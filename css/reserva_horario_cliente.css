@@ -197,7 +197,7 @@ hr.h-color{
 }
 
 #botones{
-    height: 94%;
+    height: 55%;
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
@@ -224,6 +224,4 @@ hr.h-color{
     right: 25px;
     bottom: 20px;
 }
-
-
 

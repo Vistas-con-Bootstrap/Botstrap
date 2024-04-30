@@ -4,27 +4,82 @@
 /* Inportacion de la fuente goudy bookletter  */
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Goudy+Bookletter+1911&family=Itim&display=swap');
 
-#supra{
-    font-size: 30px;
+/* Importacion de la fuente itim  */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Itim&display=swap');
+
+
+
+#lt, #btn-reservar{
     font-family: "Bona Nova", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-#seccion{
-    height: 102px;
-    background: #D9D9D9;
-    border-bottom: 1px #7B7979 solid;
+#barberia, #citas{
+    font-size: 25px;
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+   
+#side_nav{
+    background: #6A6E80;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+hr.h-color{
+    background: #eee;
 }
 
-#barra{
+.sidebar li.active{
+    background: #9BC3FF;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #fff;
+}
+.sidebar li a{
+    color: #000;
+}
+
+@media(max-width: 767px){
+    #side_nav{
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+    #btn-next{
+        left: 150px;
+    }
+
+    #caja{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #turnos{
+        padding-left: 20px;
+    }
+}
+
+/* clase para centar  */
+.center{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#cuerpo{
-    flex-direction: column;
+    flex-direction: row;
 }
 
 h2{
@@ -42,27 +97,14 @@ h2{
 
 
 
- /* Boton siguiente  */
- #caja-btn{
-    position: absolute;
-    top: 700px;
-    right: 15px;
-}
-
 #btn-siguiente{
-    width: 150px;
-    height: 50px;
-    padding: 0px 0px 0px 20px;
+    background: #7ABDFF; 
+    cursor: pointer; 
+    height: 65px;
+    position: absolute;
+    right: 40px;
 }
 
-#img-proximo{
-    width: 30px;
-    height: 30px;
-    background: url(../img/proximo.png);
-    background-size: 100% 100%;
-    position: absolute;
-    right: 100px;
-    bottom: 30px;
-}
+
 
 
