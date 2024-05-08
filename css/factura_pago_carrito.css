@@ -8,7 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Coiny&family=Itim&display=swap');
 
 
-
+body{
+    background-color: #dbdbdb;
+}
 #lt, #btn-reservar{
     font-family: "Bona Nova", serif;
     font-weight: 400;
@@ -86,6 +88,7 @@ hr.h-color{
 
 }
 
+
 /* clase para centar  */
 .center{
     display: flex;
@@ -93,14 +96,15 @@ hr.h-color{
     justify-content: center;
     flex-direction: row;
 }
-
-.fs-3{
+.fs-4{
     font-family: "Bona Nova", serif;
     font-weight: 400;
     font-style: normal;
 }
+
 #content00{
     font-family: "Goudy Bookletter 1911", serif;
     font-weight: 400;
     font-style: normal
 }
+
